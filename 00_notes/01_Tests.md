@@ -192,3 +192,11 @@ after running the test we can see there is an extra blank element
 ```
 
 if there are pointers to structs involved, use go-cmp by google -> similar to DeepEqual but more capabilities
+
+add run: go test ./... into the ci.yaml
+
+add a breaking change to see if the test is capturing the breakage (add, commit, push)
+
+fix the breaking change and see the test pass (fix, commit, push)
+
+## Code Coverage Part 2

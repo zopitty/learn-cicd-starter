@@ -192,3 +192,22 @@ after running the test we can see there is an extra blank element
 ```
 
 if there are pointers to structs involved, use go-cmp by google -> similar to DeepEqual but more capabilities
+
+add run: go test ./... into the ci.yaml
+
+add a breaking change to see if the test is capturing the breakage (add, commit, push)
+
+fix the breaking change and see the test pass (fix, commit, push)
+
+## Code Coverage Part 2
+
+include -cover to go test to get the coverage report 
+
+## README Badge for Tests
+
+add a badge to show the status of tests
+
+```
+![ALT_TEXT](IMAGE_URL)
+![code coverage badge](https://github.com/wagslane/go-rabbitmq/actions/workflows/Tests.yml/badge.svg)
+```

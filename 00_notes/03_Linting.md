@@ -27,3 +27,17 @@ func unused() {
     // and is called nowhere
 }
 ```
+
+## Additional
+
+Replace for loops with call to copy check
+
+```
+for i, x := range src {
+    dst[i] = x
+}
+```
+
+```
+copy(dst, src)
+```
